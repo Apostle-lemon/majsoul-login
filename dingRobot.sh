@@ -6,7 +6,7 @@ echo "$WEBHOOK_URL"
 
 START_DATE="2025-03-05"
 START_NUM=1920
-INCREMENT=70
+INCREMENT=60
 CURRENT_DATE=$(date +"%Y-%m-%d")
 DAYS_DIFF=$(( ( $(date -d "$CURRENT_DATE" +%s) - $(date -d "$START_DATE" +%s) ) / 86400 ))
 NEW_NUM=$(( START_NUM + DAYS_DIFF * INCREMENT ))
